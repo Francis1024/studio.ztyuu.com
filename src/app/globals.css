@@ -49,7 +49,6 @@ body {
 }
 .top-wrapper {
   margin: 0 auto;
-  width: 1360px;
 }
 #logo {
   position: absolute;
@@ -59,4 +58,8 @@ body {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+
+.custom-center {
+  height: calc(100vh - 2 * 1rem - 48px);
 }

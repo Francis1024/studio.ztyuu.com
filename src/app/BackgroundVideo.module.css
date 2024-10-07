@@ -1,0 +1,27 @@
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video {
+  position: fixed; /* 固定位置 */
+  top: 50%;
+  left: 50%;
+  min-width: 100%; /* 确保视频覆盖整个页面 */
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover; /* 保持视频比例 */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* 视频置于内容之下 */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* 内容在视频上方 */
+  text-align: center;
+  color: white; /* 内容颜色 */
+  font-size: 24px;
+}
